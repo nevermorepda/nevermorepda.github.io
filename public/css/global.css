@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s;
+}
+.transition {
+    transition: all 0.3s;
+}
+.container-fluid {
+    max-width: 1440px;
+}
+.topHeader {
+    padding: 20px;
+    background-color: #F8F9FA;
+}
+.account {
+    display: flex;
+    color: #000;
+}
+.account .fullName {
+    padding-left: 10px;
+}
+.contentHeader {
+    display: table;
+    width: 100%;
+    padding: 18px 0;
+}
+.contentHeader .boxLogo {
+    display: table-cell;
+    width: 250px;
+}
+.contentHeader .boxContact {
+    display: table-cell; 
+    width: 210px;
+    text-align: right;
+}
+.contentHeader .boxContact a {
+    background-color: #DC3545;
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    padding: 13px 57px;
+}
+.contentHeader .boxContact a:hover {
+    background-color: #b52b38;
+}
+.contentHeader .boxMenu .menu {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+.contentHeader .boxMenu .menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+}
+.contentHeader .boxMenu .menu li a:hover {
+    color: #DC3545;
+}
+.mobile {
+    position: relative;
+}
+.mobile .boxLogo img{
+    width: 150px;
+}
+.mobile .fa-bars {
+    font-size: 26px;
+    color: #333;
+    cursor: pointer;
+}
+.mobile .boxMenuMobile {
+    position: absolute;
+    top: 0;
+    left: -300px;
+    min-width: 300px;
+    background: #3d3d3d;
+    height: 100vh;
+    padding: 15px;
+}
+.mobile .boxMenuMobile.show {
+    left: 0 !important;
+}
+.mobile .boxMenuMobile .menuMobile {
+    margin: 0;
+    padding: 0;
+}
+.mobile .boxMenuMobile .menuMobile li {
+    list-style: none;
+}
+.mobile .boxMenuMobile .menuMobile li a {
+    color: #fff;
+    display: block;
+    padding: 10px 0;
+}
+.mobile .boxMenuMobile .menuMobile li a:hover {
+    padding-left: 5px;
+}
+.mobile .boxMenuMobile .account{
+    color: #fff;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
