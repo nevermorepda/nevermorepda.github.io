@@ -3,6 +3,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    background-color: #FCFCFD;
 }
 a {
     text-decoration: none;
@@ -107,4 +108,366 @@ a {
     border-bottom: 2px solid;
     padding-bottom: 10px;
     margin-bottom: 20px;
+}
+/* #################### jumbotron ############################ */
+.jumbotron .boxInfo {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.jumbotron .boxInfo .info {
+    display: table-cell;
+    vertical-align: middle;
+}
+.jumbotron .info .title {
+    font-size: 40px;
+    color: #DC3545;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.jumbotron .info p {
+    font-size: 16px;
+    font-weight: 600;
+}
+/* ###################### registrationInfo ########################## */
+.registrationInfo {
+    padding: 50px 0;
+}
+.registrationInfo .title {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+.registrationInfo p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+/* ###################### overView ########################## */
+.overView {
+    background: #fff;
+    padding: 100px 0 50px;
+}
+.overView .boxInfo {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.overView .boxInfo .info {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px 0;
+}
+.overView .boxInfo .info hr {
+    height: 4px;
+    border-radius: 4px;
+    background: #DC3545;
+    opacity: 1;
+    margin: 25px 0;
+}
+.overView .boxInfo .info .title {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.overView .boxInfo .info p {
+    font-size: 16px;
+    font-weight: 400;
+}
+/* ###################### ourServices ########################## */
+.ourServices {
+    background: #fff;
+    padding: 50px 0 85px;
+}
+.ourServices .title-m {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    color: #DC3545;
+}
+.ourServices .item {
+    margin-bottom: 25px;
+    position: relative;
+}
+.ourServices .item .boxTitle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: table;
+}
+.ourServices .item .boxTitle .title {
+    height: 100%;
+    background: #0000006b;
+    margin: 0;
+    border-radius: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.ourServices .item img {
+    padding: 10px;
+}
+.ourServices .item .boxName {
+    height: 416px;
+    padding: 10px;
+}
+.ourServices .item .name {
+    height: 100%;
+    margin: 0;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+}
+/* ###################### process ########################## */
+.process {
+    background-color: #F8F9FA;
+    padding: 100px 0;
+}
+.process .title {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+/* ###################### location ########################## */
+.location {
+    padding: 100px 0;
+    background: #fff;
+}
+.location .selectLocation {
+    margin-bottom: 100px;
+    text-align: center;
+}
+.location .selectLocation .title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+}
+.location .selectLocation p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 30px 0;
+}
+.location .selectLocation .form-select {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+.location .boxNation {
+    margin-bottom: 100px;
+}
+.location .boxNation .nation {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.location .boxNation .nation .nationInfo {
+    display: table-cell;
+    vertical-align: middle;
+}
+.location .boxNation .nation .nationInfo .title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+}
+.location .boxNation .nation .nationInfo hr {
+    height: 4px;
+    border-radius: 4px;
+    background: #DC3545;
+    opacity: 1;
+    margin: 25px 0;
+}
+.location .boxNation .nation .nationInfo p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+.location .boxNation .nation .nationInfo .readMore {
+    background-color: #DC3545;
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    padding: 13px 57px;
+    margin-bottom: 30px;
+}
+/* ###################### fee ########################## */
+.fee .item {
+    padding: 70px 30px 50px;
+    border-radius: 10px;
+    border: 1px solid #343A40;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 25px;
+}
+.fee .item.active {
+    border: 1px solid #DC3545;
+}
+.fee .item .topTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #343A40;
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+.fee .item.active .topTitle {
+    background: #DC3545;
+}
+.fee .item .title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.fee .item label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 15px 0 0px;
+}
+.fee .item .price {
+    color: #DC3545;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+}
+.fee .item p {
+    color: #2B8C6A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 24px 0;
+}
+.fee .item .boxInfo {
+    margin-bottom: 25px;
+}
+.fee .item .boxInfo .infoTitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+.fee .item .boxInfo .infoTitle i {
+    color: #2B8C6A;
+    margin-right: 5px;
+}
+.fee .item .boxInfo ul {
+    padding-left: 24px;
+}
+.fee .item .boxInfo ul li {
+    list-style: none;
+    line-height: 30px;
+}
+.fee .item .btnGetStarted {
+    display: block;
+    border: 2px solid #dc3545;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: #dc3545;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+}
+.fee .item.active .btnGetStarted {
+    color: #fff;
+    background: #dc3545;
+}
+/* ###################### workWithUs ########################## */
+.workWithUs {
+    background: #F8F9FA;
+    padding: 100px 0;
+    text-align: center;
+}
+.workWithUs .item {
+    margin-bottom: 20px;
+}
+.workWithUs .title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+.workWithUs img {
+    width: 140px;
+}
+.workWithUs h6 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 30px 0;
+    line-height: 35px;
+}
+.workWithUs p { 
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+/* ###################### contact ########################## */
+.contact {
+    background: #FFF;
+    padding: 100px 0;
+}
+.contact .title {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact input[type='text'] {
+    height: 50px;
+}
+.contact .form-check {
+    margin-bottom: 10px;
+}
+.contact label{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+.contact .checkBoxTitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 25px 0 5px;
+}
+.contact .sendContact {
+    background-color: #DC3545;
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    padding: 13px 100px;
+    border: none;
+    margin-top: 30px;
+}
+/* ###################### footer ########################## */
+footer {
+    padding: 100px 0;
+    background: #343A40;
+    color: #fff;
 }
