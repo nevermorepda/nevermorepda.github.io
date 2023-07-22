@@ -9,8 +9,27 @@ a {
     color: #000;
     transition: all 0.3s;
 }
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
 a:hover {
     color: #DC3545;
+}
+section {
+    padding: 50px 0;
+}
+.displayTable {
+    display: table;
+    width: 100%;
+}
+.displayTableCell {
+    display: table;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
 }
 textarea:focus, input:focus{
     outline: none;
@@ -465,18 +484,21 @@ textarea:focus, input:focus{
 /* ############################################################### */
 /* ###################### About Us page ########################## */
 /* ############################################################### */
-#aboutUs .banner {
+.banner {
     position: relative;
     height: 600px;
     overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #aboutUs .banner .boxVideo {
     position: relative;
 }
-#aboutUs .banner .videoPC video {
+#aboutUs .banner #videoPC {
     transform: translatey(-20%);
 }
-#aboutUs .banner .bgBanner {
+.banner .bgBanner {
     width: 0;
     height: 0;
     border-style: solid;
@@ -485,6 +507,14 @@ textarea:focus, input:focus{
     position: absolute;
     top: 0;
     left: 0;
+}
+.content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    color: #fff;
 }
 #aboutUs .banner .content i {
     position: absolute;
@@ -501,14 +531,6 @@ textarea:focus, input:focus{
     right: 21vw;
     top: 15vw;
     box-shadow: 0 0 10px #d7d7d7;
-}
-#aboutUs .banner .content {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    color: #fff;
 }
 #aboutUs .banner .content h1 {
     font-size: 64px;
@@ -642,6 +664,194 @@ textarea:focus, input:focus{
 }
 #aboutUs .ourService .box .list p {
     padding: 0 35px;
+}
+.banner .formBox {
+    margin-top: 70px;
+}
+.banner .formBox .title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+.banner .formBox ul {
+    padding: 0;
+}
+.banner .formBox ul li {
+    list-style: none;
+    padding: 20px 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+.banner .formBox ul li:last-child {
+    border-bottom: none;
+}
+.banner .formBox ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.banner .formBox ul li a:hover {
+    text-decoration-line: underline;
+}
+.banner .formBox .btnApply {
+    display: inline-block;
+    background: #fff;
+    padding: 15px 60px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: #DC3545;
+    border: 2px solid #fff;
+}
+.banner .formBox .btnApply:hover {
+    background: #DC3545;
+    color: #fff;
+}
+.banner .imageBanner {
+    margin-top: 40px;
+}
+.documents {
+    padding: 50px 0;
+}
+.documents .title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    color: #9C0B0B;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.documents .box {
+    border-radius: 20px;
+    border: 1px solid #bbb;
+    padding: 50px 30px;
+    margin-bottom: 20px;
+}
+.documents .box.box-1 {
+    min-height: 460px;
+}
+.documents .box.box-2 {
+    min-height: 450px;
+}
+.documents .box.box-3 .info {
+    min-height: 350px;
+}
+.documents .box.box-4 .info {
+    min-height: 390px;
+}
+.documents .box h5 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.documents .box.box-1 p {
+    min-height: 180px;
+}
+.documents .box p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.documents .box .checkDocuemntInput {
+    width: 100%;
+    border: 2px solid #999;
+    height: 50px;
+    border-radius: 10px;
+    text-indent: 10px;
+    margin: 10px 0;
+}
+.documents .box .btnCheck {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    border: 2px solid #C30E0E;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    color: #C30E0E;
+    margin: 10px 0;
+    background: #fff;
+}
+.documents .box .seeMore {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.documents .listToggle {
+    padding: 0;
+}
+.documents .listToggle li {
+    list-style: none;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 20px;
+}
+.documents .listToggle li:last-child{
+    border-bottom: none;
+}
+.documents .listToggle li h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+.documents .listToggle li h6 i {
+    position: absolute;
+    right: 0;
+    color: #858585;
+}
+.documents .listToggle li p {
+    font-size: 14px;
+    line-height: 22px;
+    display: none;
+}
+.documents .feeTable th {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 25px 20px;
+}
+.documents .feeTable td {
+    padding: 25px 20px;
+}
+.apply .title {
+    color: #821415;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.apply .item {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.apply .item img {
+    width: 100px;
+}
+.apply .item h5 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.apply .item p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+#voa .imageBanner {
+    margin-top: 150px;
+    border: 10px solid #fff;
+    border-radius: 28px;
 }
 /* ###################### footer ########################## */
 footer {
