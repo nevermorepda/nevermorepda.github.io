@@ -10,3 +10,25 @@ $( document ).ready(function() {
         }
     })
 });
+
+$(document).on('click','.videoBoxPC .fa-play', function() {
+    $(this).removeClass('fa-play')
+    $(this).addClass('fa-pause')
+    document.getElementById('videoPC').play();
+})
+    $(document).on('click','.videoBoxPC .fa-pause', function() {
+    $(this).removeClass('fa-pause')
+    $(this).addClass('fa-play')
+    document.getElementById('videoPC').pause();
+})
+
+$(document).on('click','.bannerMobile .fa-play', function() {
+    $(this).removeClass('fa-play')
+    $(this).addClass('fa-pause')
+    document.getElementById('videoMobile').play();
+})
+    $(document).on('click','.bannerMobile .fa-pause', function() {
+    $(this).removeClass('fa-pause')
+    $(this).addClass('fa-play')
+    document.getElementById('videoMobile').pause();
+})
