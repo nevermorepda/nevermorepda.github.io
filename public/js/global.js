@@ -21,6 +21,19 @@ $( document ).ready(function() {
         }
         $(this).parents('li').find('p').toggle('fast')
     })
+
+    $('.showMenu').click(function() {
+        if($(this).attr('status') == 'off') {
+            $(this).find('i').addClass('fa-chevron-up')
+            $(this).find('i').removeClass('fa-chevron-down')
+            $(this).attr('status','on')
+        } else {
+            $(this).find('i').addClass('fa-chevron-down')
+            $(this).find('i').removeClass('fa-chevron-up')
+            $(this).attr('status','off')
+        }
+        $(this).parents('li').find('.subMenu').toggle('fast')
+    })
 });
 
 $(document).on('click','.videoBoxPC .fa-play', function() {
