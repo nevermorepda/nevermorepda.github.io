@@ -317,6 +317,12 @@ textarea:focus, input:focus{
     border-radius: 15px;
     color: #c30e0e;
 }
+.boxInfoHome h1 {
+    color: #fff;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+}
 /* ###################### ourServices ########################## */
 .ourServices {
     background: #fff;
@@ -431,28 +437,28 @@ textarea:focus, input:focus{
     background: #fff;
     padding: 100px 0 50px;
 }
-.aboutUs .boxInfo {
+.aboutUs {
     display: table;
     width: 100%;
     height: 100%;
 }
-.aboutUs .boxInfo .info {
+.aboutUs .info {
     display: table-cell;
     vertical-align: middle;
     padding: 20px 0;
 }
-.aboutUs .boxInfo .info .title {
+.aboutUs .info .title {
     font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
     color: #9C0B0B;
     margin-bottom: 30px;
 }
-.aboutUs .boxInfo .info p {
+.aboutUs .info p {
     font-size: 16px;
     font-weight: 400;
 }
-.aboutUs .boxInfo .btnLearnMore {
+.aboutUs .btnLearnMore {
     background-color: #C30E0E;
     border-radius: 25px;
     display: inline-block;
@@ -512,22 +518,22 @@ textarea:focus, input:focus{
     display: inline-block;
     color: #F8C700;
 }
-.review .boxReview .content {
+.review .boxReview .contentRating {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     position: relative;
 }
-.review .boxReview .content i {
+.review .boxReview .contentRating i {
     position: absolute;
     font-size: 30px;
     color: #5c5c5c;
 }
-.review .boxReview .content .fa-quote-left {
+.review .boxReview .contentRating .fa-quote-left {
     left: -30px;
     top: -5px;
 }
-.review .boxReview .content .fa-quote-right {
+.review .boxReview .contentRating .fa-quote-right {
     right: -30px;
     bottom: -5px;
 }
@@ -1051,9 +1057,6 @@ textarea:focus, input:focus{
 }
 .contenBorder .title {
     margin-bottom: 10px !important;
-}
-.boxInfo {
-
 }
 .boxInfo .title {
     background: #CF3E3E;
