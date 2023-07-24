@@ -1612,6 +1612,364 @@ textarea:focus, input:focus{
 .boxInfoContact .itemRight p {
     margin-bottom: 0;
 }
+.boxInfoContact .btnContact {
+    display: inline-block;
+    background: #C30E0E;
+    color: #fff;
+    padding: 10px 36px;
+    width: 220px;
+    text-align: center;
+    border-radius: 7px;
+}
+.formApply .formBox {
+    margin-bottom: 40px;
+}
+.formApply select,
+.formApply input[type='text'],
+.formApply input[type='date'],
+.formApply input[type='number'] {
+    font-size: 16px;
+    margin-bottom: 20px;
+    height: 50px;
+}
+.formApply h4 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: #9C0B0B;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.formApply .boxService {
+    margin-bottom: 50px;
+}
+.formApply .addOn {
+    color: #9c0b0b;
+}
+.formApply .reviewOrder {
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    padding: 15px;
+}
+.formApply .reviewOrder h3 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+}
+.formApply .reviewOrder .clearfix {
+    margin-top: 15px;
+}
+.formApply .reviewOrder .type {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+.formApply .reviewOrder .type img {
+    margin-right: 5px;
+}
+.formApply .reviewOrder .touristList {
+    padding-left: 45px;
+    margin-bottom: 0;
+}
+.formApply .reviewOrder .touristList li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.formApply .reviewOrder .touristList p {
+    margin-bottom: 0;
+}
+.formApply .reviewOrder .touristList .redColor {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color:#9c0b0b;
+    margin-bottom: 0;
+    position: relative;
+}
+.formApply .reviewOrder .touristList .redColor:before {
+    position: absolute;
+    content: '•';
+    left: -15px;
+    font-size: 20px;
+}
+.formApply .reviewOrder h5 {
+    font-size: 16px;
+    color:#9c0b0b;
+    font-style: normal;
+    font-weight: 700;
+}
+.formApply .reviewOrder .discountBox {
+    background: #FAFAFA;
+    border: 1px dashed #ABB5BE;
+    padding: 20px 35px 5px;
+}
+.formApply .reviewOrder .discountBox .discount {
+    display: block;
+    width: 100%;
+    border: 1px solid #bbb;
+    height: 45px;
+    border-radius: 7px;
+}
+.formApply .reviewOrder .fee {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+}
+.formApply .reviewOrder .totalFee {
+    font-size: 22px;
+    color:#9c0b0b;
+    font-style: normal;
+    font-weight: 600;
+}
+.formApply .reviewOrder .btnNextStep {
+    display: block;
+    width: 100%;
+    background-color: #9C0B0B;
+    color: #fff;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.applicant {
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.applicant .applicantTitle {
+    margin: 0;
+    background: #D9D9D9;
+    padding: 14px 20px;
+}
+.applicant .info {
+    padding: 20px;
+    margin: 0;
+}
+.applicant .info li.item {
+    margin-bottom: 10px;
+    list-style: none;
+    position: relative;
+    padding-left: 15px;
+    display: table;
+    width: 100%;
+}
+.applicant .info li.item .itemLeft {
+    display: table-cell;
+    width: 200px;
+}
+.applicant .info li.item .itemRight {
+    display: table-cell;
+}
+.applicant .info li::before {
+    content: "\2022";
+    color: #9C0B0B;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+  }
+.applicant .info li:last-child {
+    margin-bottom: 0;
+}
+.applicant .attachFile {
+    padding: 25px;
+}
+.applicant .attachFile .boxAttachFile {
+    border-left: 1px solid #bbb;
+    padding-left: 15px;
+}
+.applicant .attachFile .files {
+    display: table;
+    width: 100%;
+}
+.applicant .attachFile .fileItem {
+    display: table-cell;
+    padding:5px
+}
+.applicant .attachFile .fileItem img {
+    width: 100%;
+}
+.applicant.edit {
+
+}
+.applicantForm {
+    padding: 20px;
+}
+.applicantForm .infoBoxUpload {
+    position: relative;
+}
+.applicantForm .infoBoxUpload:hover .infoUpload {
+    display: flex;
+}
+.applicantForm .infoBoxUpload .infoUpload {
+    display: none;
+    background: #fff;
+    box-shadow: 0 0 10px #bbb;
+    border-radius: 7px;
+    padding: 12px;
+    position: absolute;
+    width: 350px;
+    z-index: 1;
+    top: 30px;
+    left: -70px;
+}
+.applicantForm .infoBoxUpload .infoUpload::before {
+    position: absolute;
+    content: '';
+    top: -13px;
+    left: 60px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 20px;
+    border-color: transparent transparent #ffffff transparent;
+}
+.applicantForm .infoBoxUpload .infoUpload img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.applicantForm .infoBoxUpload .infoUpload p {
+    font-size: 15px;
+    line-height: 27px;
+    margin-bottom: 0;
+}
+.formApply .apply-file-upload  input[type="file"] {
+    display: none;
+}
+.formApply .apply-file-upload {
+    display: block;
+    text-align: center;
+    background: #FAFAFA;
+    border: 1px solid #e5e5e5;
+    border-radius: 7px;
+    padding: 70px;
+    cursor: pointer;
+}
+.formApply .apply-file-upload i {
+    font-size: 45px;
+    color: #ABB5BE;
+}
+.formApply .apply-file-upload p {
+    color:#C30E0E;
+    text-decoration: underline;
+}
+.formApply .btnSave {
+    color: #C30E0E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    border: 1px solid;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 120px;
+    background: #fff;
+}
+.formApply .btnCancel {
+    color: #333;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    border: 1px solid;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 120px;
+    background: #fff;
+}
+.formApply .addBox {
+    color: #0F5BED;
+    text-decoration: underline;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+.form-check-input:checked {
+    background-color: #c30e0e;
+    border-color: #c30e0e;
+}
+.boxPayment input{
+    margin-top: 25px;
+    cursor: pointer;
+}
+.bankTransfer {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 679px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #aeaeae;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.bankTransfer .bankTransferTitle {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.bankTransfer .bankTransferTitle h5 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.bankTransfer .info {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.bankTransfer .info li {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 15px;
+}
+.bankTransfer .info li:last-child {
+    border-bottom: none;
+}
+.bankTransfer .info p {
+    margin-bottom: 5px;
+}
+.bankTransfer .info h6 {
+    font-weight: 600;
+}
+.paypal {
+    display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #aeaeae;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.paypal h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 26px;
+}
+.paypal .clickPaypal {
+    color: #C30E0E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    background: #fff;
+}
 /* ###################### footer ########################## */
 footer {
     padding: 50px 0;

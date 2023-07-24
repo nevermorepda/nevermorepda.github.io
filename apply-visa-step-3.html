@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Offshore Company (G.O.C)</title>
+    <link
+      href="./public/css/bootstrap-5.0.2/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link href="./public/css/global.css" rel="stylesheet">
+    <link href="./public/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="./public/css/owl.theme.default.min.css" rel="stylesheet">
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/owl.carousel.min.js"></script>
+    <script src="./public/js/global.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="d-none d-lg-none d-xl-block d-xxl-block">
+        <div class="topHeader clearfix">
+          <div class="container-fluid">
+            <div class="float-start">
+              <strong>Have a question? </strong>
+              <span class="phone">Call us: <a href="#">(+84) 123-456-789</a></span>
+              <span class="email">Send us an email: <a href="#">abc@gmail.com</a></span>
+            </div>
+            <div class="float-end d-flex">
+              <div class="account">
+                <i class="fa-solid fa-user"></i>
+                <div class="fullName">My account</div>
+              </div>
+              <ul class="lang">
+                <li class="active">EN</li>
+                <li>VI</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="contentHeader">
+            <div class="boxLogo">
+              <a href="./index.html">
+                <img src="./public/image/logo.svg" alt>
+                <img src="./public/image/logo-name.svg" alt>
+              </a>
+            </div>
+            <div class="boxMenu">
+              <ul class="menu">
+                <li class="item"><a href="./index.html">Home</a></li>
+                <li class="item"><a href>Services</a></li>
+                <li class="item"><a href>Pricing</a></li>
+                <li class="item"><a href>Counties</a></li>
+                <li class="item"><a href="./about-us.html">About us</a></li>
+                <li class="item"><a href>Resources</a></li>
+              </ul>
+            </div>
+            <div class="boxSearch">
+              <div class="searchBar">
+                <input type="text" name="" id="search" class="search" value="" title="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-block d-xl-none d-xxl-none">
+        <div class="topHeader mobile clearfix">
+          <div class="float-start">
+            <a href>
+              <img src="./public/image/logo.svg" alt width="30px">
+              <img src="./public/image/logo-name.svg" alt width="150px">
+            </a>
+          </div>
+          <div class="float-end"><i class="fa-solid fa-bars" show="0"></i></div>
+          <div class="boxMenuMobile transition">
+            <a href>
+              <div class="account">
+                <i class="fa-solid fa-user"></i>
+                <div class="fullName">My account</div>
+              </div>
+            </a>
+            <ul class="menuMobile">
+              <li class="item"><a href="./index.html">Home</a></li>
+              <li class="item"><a href>Services</a></li>
+              <li class="item"><a href>Pricing</a></li>
+              <li class="item"><a href>Counties</a></li>
+              <li class="item"><a href="./about-us.html">About us</a></li>
+              <li class="item"><a href>Resources</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header ---------------------------------------------------------------------------------------------------------------------->
+    <main class="applyVisa">
+    <section class="visaStep">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <img src="./public/image/step3.png" class="w-100" alt="">
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="formApply">
+      <form action="">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h4>PAYMENT METHODS</h4>
+            <div class="boxPayment">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <input class="form-check-input paymentMethod" type="radio" name="payment" value="Bank transfer" checked>
+                    <label class="form-check-label" for="">
+                      <img src="./public/image/bank.png" alt="">
+                      Bank transfer
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <input class="form-check-input paymentMethod" type="radio" name="payment" value="Paypal" id="">
+                    <label class="form-check-label" for="">
+                      <img src="./public/image/pp.png" alt="">
+                      Paypal
+                    </label>
+                  </div>
+                </div>
+              </div><br>
+              <p>Lorem ipsum dolor sit amet consectetur. Auctor nullam risus senectus viverra facilisi. Platea nibh ultrices nisi sit magna. Ipsum amet eget fringilla etiam id vel.</p>
+            </div>
+            <script>
+              $(".paymentMethod").click(function(){
+                var radioValue = $("input[name='payment']:checked").val();
+                if(radioValue === 'Bank transfer'){
+                    $('.bankTransfer').show()
+                    $('.paypal').hide()
+                } else {
+                  $('.bankTransfer').hide()
+                  $('.paypal').show()
+                }
+            });
+            </script>
+            <div class="bankTransfer" style="background-image: url('./public/image/bg-bank-transfer.png')">
+              <div class="row">
+                <div class="col-md-6" style="border-right: 1px solid #bbb;">
+                  <div class="bankTransferTitle">
+                    <img src="./public/image/dola.svg" alt="">
+                    <h5>Bank (USD)</h5>
+                  </div>
+                  <ul class="info">
+                    <li>
+                      <p>Account name</p>
+                      <h6>CONG TY TNHH THE ONE VIETNAM</h6>
+                    </li>
+                    <li>
+                      <p>Account number</p>
+                      <h6>0421370512899</h6>
+                    </li>
+                    <li>
+                      <p>Bank name</p>
+                      <h6>Vietcombank</h6>
+                    </li>
+                    <li>
+                      <p>Address</p>
+                      <h6>664 Su Van Hanh Street, Ward 12, District 10, Ho Chi Minh City, Vietnam</h6>
+                    </li>
+                    <li>
+                      <p>SWIFT code</p>
+                      <h6>BFTVVNVX 042</h6>
+                    </li>
+                    <li>
+                      <p>Content</p>
+                      <h6>Order ID - Phone number</h6>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <div class="bankTransferTitle">
+                    <img src="./public/image/dola.svg" alt="">
+                    <h5>Bank (USD)</h5>
+                  </div>
+                  <ul class="info">
+                    <li>
+                      <p>Account name</p>
+                      <h6>CONG TY TNHH THE ONE VIETNAM</h6>
+                    </li>
+                    <li>
+                      <p>Account number</p>
+                      <h6>0421370512899</h6>
+                    </li>
+                    <li>
+                      <p>Bank name</p>
+                      <h6>Vietcombank</h6>
+                    </li>
+                    <li>
+                      <p>Address</p>
+                      <h6>664 Su Van Hanh Street, Ward 12, District 10, Ho Chi Minh City, Vietnam</h6>
+                    </li>
+                    <li>
+                      <p>SWIFT code</p>
+                      <h6>BFTVVNVX 042</h6>
+                    </li>
+                    <li>
+                      <p>Content</p>
+                      <h6>Order ID - Phone number</h6>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="paypal" style="background-image: url('./public/image/bg-paypal.png')">
+              <h5>You want to pay via paypal</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+              <a href="" class="clickPaypal">Click here</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="reviewOrder">
+              <h3>REVIEW YOUR ORDER</h3>
+              <div class="clearfix">
+                <div class="float-start"><h6 class="type"><img src="./public/image/fly.svg" alt=""> Group of Services :</h6></div>
+                <div class="float-end">Visa Services</div>
+              </div>
+              <div class="clearfix">
+                <div class="float-start"><h6 class="type"><img src="./public/image/fly.svg" alt=""> Tourist eVisa :</h6></div>
+                <div class="float-end">Quantity x $0</div>
+              </div>
+              <ul class="touristList">
+                <li class="item">
+                  <div class="clearfix">
+                    <div class="float-start">
+                      <p class="redColor">Entry date : </p>
+                      <p>07/11/2023</p>
+                    </div>
+                    <div class="float-end">
+                      <p class="redColor">Entry date : </p>
+                      <p>07/11/2023</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                    <p class="redColor">Arrival port :</p>
+                    <p>Tan Son Nhat International Airport (Ho Chi Minh City)</p>
+                </li>
+                <li class="item">
+                    <p class="redColor">Number of Applicants :</p>
+                    <p>1</p>
+                </li>
+                <li class="item">
+                    <p class="redColor">Processing time :</p>
+                    <p>Normal | 3 working days</p>
+                </li>
+              </ul>
+              <hr>
+              <h5>ADD-ON SERVICES</h5>
+              <div class="clearfix">
+                <div class="float-start"><h6 class="type"><img src="./public/image/fly.svg" alt=""> Arrival Fast track :</h6></div>
+                <div class="float-end">Quantity x $0</div>
+              </div>
+              <ul class="touristList">
+                <li class="item">
+                    <p class="redColor">Number of Passengers : </p>
+                    <p>1</p>
+                </li>
+                <li class="item">
+                    <p class="redColor">Type : </p>
+                    <p>Normal | $45</p>
+                </li>
+                <li class="item">
+                    <p class="redColor">Processing time :</p>
+                    <p>Normal | 3 working days</p>
+                </li>
+                <li class="item">
+                  <div class="clearfix">
+                    <div class="float-start">
+                      <p class="redColor">Flight number :  </p>
+                      <p>FN_123456</p>
+                    </div>
+                    <div class="float-end">
+                      <p class="redColor">Arrival date : </p>
+                      <p>07/11/2023</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="clearfix">
+                <div class="float-start"><h6 class="type"><img src="./public/image/fly.svg" alt=""> Car Pick up :</h6></div>
+                <div class="float-end">Quantity x $0</div>
+              </div>
+              <ul class="touristList">
+                <li class="item">
+                  <p class="redColor">Number of Passengers : </p>
+                  <p>1</p>
+                </li>
+                <li class="item">
+                  <p class="redColor">Type of car : </p>
+                  <p>4 seats</p>
+                </li>
+                <li class="item">
+                    <p class="redColor">Processing time :</p>
+                    <p>Normal | 3 working days</p>
+                </li>
+              </ul>
+              <div class="clearfix">
+                <div class="float-start"><h6 class="type"><img src="./public/image/fly.svg" alt=""> eSIM :</h6></div>
+                <div class="float-end">Quantity x $0</div>
+              </div>
+              <ul class="touristList">
+                <li class="item">
+                    <p class="redColor">Quantity : </p>
+                    <p>1</p>
+                </li>
+              </ul>
+              <div class="discountBox">
+                <label for="" class="form-label"><strong>Discount field</strong></label>
+                <input type="text" class="discount">
+              </div>
+              <div class="feeBox">
+                <div class="clearfix fee">
+                  <div class="float-start">Sub total :</div>
+                  <div class="float-end">$0</div>
+                </div>
+                <div class="clearfix fee">
+                  <div class="float-start">Discount :</div>
+                  <div class="float-end">$0</div>
+                </div>
+                <div class="clearfix totalFee">
+                  <div class="float-start">Total :</div>
+                  <div class="float-end">$0</div>
+                </div>
+              </div>
+              <button type="submit" class="btnNextStep">Process to payment</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </form>
+    </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="boxLogo">
+              <img src="./public/image/logo.svg" alt="">
+              <img src="./public/image/logo-name.svg" alt="">
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-3">
+                <h5 class="title">Company</h5>
+                <ul class="list">
+                  <li class="item"><a href="">About Us</a></li>
+                  <li class="item"><a href="">Careers</a></li>
+                  <li class="item"><a href="">Terms &<br/> Conditions</a></li>
+                  <li class="item"><a href="">Cancelation &<br/> Refund Policy</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h5 class="title">Company</h5>
+                <ul class="list">
+                  <li class="item"><a href="">About Us</a></li>
+                  <li class="item"><a href="">Careers</a></li>
+                  <li class="item"><a href="">Terms &<br/> Conditions</a></li>
+                  <li class="item"><a href="">Cancelation &<br/> Refund Policy</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h5 class="title">Company</h5>
+                <ul class="list">
+                  <li class="item"><a href="">About Us</a></li>
+                  <li class="item"><a href="">Careers</a></li>
+                  <li class="item"><a href="">Terms &<br/> Conditions</a></li>
+                  <li class="item"><a href="">Cancelation &<br/> Refund Policy</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h5 class="title">Company</h5>
+                <ul class="list">
+                  <li class="item"><a href="">About Us</a></li>
+                  <li class="item"><a href="">Careers</a></li>
+                  <li class="item"><a href="">Terms &<br/> Conditions</a></li>
+                  <li class="item"><a href="">Cancelation &<br/> Refund Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottomFooter">
+          <div class="row">
+            <div class="col-md-3">
+              <p>Address:  No. 123, Street 456 ,Ward ABC, District ABC, Country</p>
+            </div>
+            <div class="col-md-9">
+              <div class="row">
+                <div class="col-md-3">
+                  <p>Hotline: <a href="">(+84) 123-456-789</a></p> 
+                </div>
+                <div class="col-md-3">
+                  <p>Email: <a href="">abc@gmail.com</a></p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="./public/js/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="./public/js/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
