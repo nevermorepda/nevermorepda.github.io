@@ -34,6 +34,24 @@ $( document ).ready(function() {
         }
         $(this).parents('li').find('.subMenu').toggle('fast')
     })
+
+    $('.boxTitle .tab').click(function() {
+        $('.boxTitle .tab').removeClass('active')
+        $(this).addClass('active')
+        if($(this).attr('tlt') == 'signin') {
+            $('.signinTab').css('display','block')
+            $('.signupTab').css('display','none')
+        } else {
+            $('.signinTab').css('display','none')
+            $('.signupTab').css('display','block')
+        }
+    })
+    $('.closeLoginPage').click(function() {
+        $('.signInPage').hide()
+    })
+    $('.showLoginPage').click(function() {
+        $('.signInPage').show()
+    })
 });
 
 $(document).on('click','.videoBoxPC .fa-play', function() {
