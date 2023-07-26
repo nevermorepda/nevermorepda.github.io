@@ -2132,6 +2132,107 @@ textarea:focus, input:focus{
     display: inline-block;
     background: #fff;
 }
+#orderPage {
+    padding: 100px 0;
+}
+.profileBox {
+    border: 1px solid #dee2e6;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.profileBox .imageBox {
+    width: 169px;
+    height: 169px;
+    margin: auto;
+    position: relative;
+}
+.profileBox .imageBox img {
+    object-fit: cover;
+    width: 169px;
+    height: 169px;
+    border-radius: 50%;
+}
+.profileBox .imageBox i{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    text-align: center;
+    padding: 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #000;
+    color: #c30e0e;
+}
+.profileBox h5{
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 20px 0;
+    display: block;
+}
+.profileBox .tabs {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+.profileBox .tabs li a {
+    display: block;
+    background: #f4f4f4;
+    margin-bottom: 15px;
+    padding: 12px 23px;
+    border-radius: 10px;
+}
+.profileBox .tabs li a.active,
+.profileBox .tabs li a:hover {
+    color: #fff;
+    background: #9c0b0b;
+}
+.orderBox {
+    border: 1px solid #dee2e6;
+    padding: 25px;
+    border-radius: 15px;
+    overflow: auto;
+}
+.orderBox h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #c30e0e;
+}
+.orderBox th,
+.orderBox td {
+    padding: 20px 7px;
+}
+.orderBox .fa-eye {
+    color: #c30e0e;
+    cursor: pointer;
+}
+.orderPagination {
+    display: flex;
+    margin-top: 30px;
+}
+.orderPagination .pagiList {
+    padding-left: 10px ;
+}
+.orderPagination .pagiList li {
+    display: inline-block;
+}
+.orderPagination .pagiList li a {
+    display: inline-block;
+    padding: 0 7px;
+    line-height: 16px;
+    font-weight: 400;
+}
+.orderPagination .pagiList li a.active{
+    color: #CF3E3E;
+    font-weight: 600;
+}
+
 /* ###################### footer ########################## */
 footer {
     padding: 50px 0;
