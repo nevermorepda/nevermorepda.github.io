@@ -10,11 +10,9 @@
     <link href="./public/css/global.css" rel="stylesheet">
     <link href="./public/css/owl.carousel.min.css" rel="stylesheet">
     <link href="./public/css/owl.theme.default.min.css" rel="stylesheet">
-    <script
-    src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/jquery.min.js"></script>
     <script src="./public/js/owl.carousel.min.js"></script>
-    <script
-      src="./public/js/global.js"></script>
+    <script src="./public/js/global.js"></script>
   </head>
   <body>
     <header>
@@ -27,7 +25,7 @@
               <span class="email">Send us an email: <a href="#">abc@gmail.com</a></span>
             </div>
             <div class="float-end d-flex">
-              <div class="account">
+              <div class="account showLoginPage">
                 <i class="fa-solid fa-user"></i>
                 <div class="fullName">My account</div>
               </div>
@@ -48,11 +46,20 @@
             </div>
             <div class="boxMenu">
               <ul class="menu">
-                <li class="item"><a href="./index.html">Home</a></li>
-                <li class="item"><a href>Services</a></li>
-                <li class="item"><a href>Pricing</a></li>
-                <li class="item"><a href>Counties</a></li>
+                <li class="item">
+                  <a href><strong>Services <i class="fa-solid fa-chevron-down"></i></strong></a>
+                  <ul class="subMenu">
+                    <li><a href="./e-visa.html">eVisa</a></li>
+                    <li><a href="./voa.html">Visa On Arrival (VOA)</a></li>
+                    <li><a href="./fast-track.html">Fast Track</a></li>
+                    <li><a href="./car-pickup.html">Car Pickup/ Dropoff</a></li>
+                    <li><a href="./e-sim.html">eSIM</a></li>
+                    <li><a href="./5-years-visa.html">5 Years Visa Exemption</a></li>
+                  </ul>
+                </li>
+                <li class="item"><a href="./pricing.html">Pricing</a></li>
                 <li class="item"><a href="./about-us.html">About us</a></li>
+                <li class="item"><a href="./frequently-a-q.html">FAQs</a></li>
                 <li class="item"><a href>Resources</a></li>
               </ul>
             </div>
@@ -68,27 +75,160 @@
       <div class="d-block d-xl-none d-xxl-none">
         <div class="topHeader mobile clearfix">
           <div class="float-start">
-            <a href>
+            <a href="./index.html" >
               <img src="./public/image/logo.svg" alt width="30px">
               <img src="./public/image/logo-name.svg" alt width="150px">
             </a>
           </div>
           <div class="float-end"><i class="fa-solid fa-bars" show="0"></i></div>
           <div class="boxMenuMobile transition">
-            <a href>
-              <div class="account">
+            <div class="boxAccount clearfix">
+              <div class="account showLoginPage float-start">
                 <i class="fa-solid fa-user"></i>
                 <div class="fullName">My account</div>
               </div>
-            </a>
+              <div class="langMobile float-end">
+                <a class="langItem active">EN</a><a class="langItem">VI</a>
+              </div>
+            </div>
             <ul class="menuMobile">
-              <li class="item"><a href="./index.html">Home</a></li>
-              <li class="item"><a href>Services</a></li>
-              <li class="item"><a href>Pricing</a></li>
-              <li class="item"><a href>Counties</a></li>
+              <li class="item">
+                <a class="showMenu" status="off">Services <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="subMenu">
+                  <li><a href="./e-visa.html">eVisa</a></li>
+                  <li><a href="./voa.html">Visa On Arrival (VOA)</a></li>
+                  <li><a href="./fast-track.html">Fast Track</a></li>
+                  <li><a href="./car-pickup.html">Car Pickup/ Dropoff</a></li>
+                  <li><a href="./e-sim.html">eSIM</a></li>
+                  <li><a href="./5-years-visa.html">5 Years Visa Exemption</a></li>
+                </ul>
+              </li>
+              <li class="item"><a href="./pricing.html">Pricing</a></li>
               <li class="item"><a href="./about-us.html">About us</a></li>
+              <li class="item"><a href="./frequently-a-q.html">FAQs</a></li>
               <li class="item"><a href>Resources</a></li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div class="signInPage">
+        <div class="container container-m">
+          <div class="boxSignIn">
+            <i class="fa-solid fa-xmark closeLoginPage"></i>
+            <div class="row">
+              <div class="col-md-5 d-none d-lg-none d-xl-block d-xxl-block">
+                  <img src="./public/image/signin.jpg" class="w-100" alt="">
+              </div>
+              <div class="col-md-7">
+                  <div class="boxTitle">
+                    <div class="tabs">
+                      <div tlt='signin' class="tab active">
+                        SIGN IN
+                      </div>
+                      <div tlt='signup' class="tab ">
+                        SIGN UP
+                      </div>
+                    </div>
+                  </div>
+                  <div class="signinTab">
+                    <h3>SIGN IN</h3>
+                    <div class="mb-2">
+                      <label for="" class="form-label"><strong>Email <span style="color:red">*</span></strong></label>
+                      <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    </div>
+                    <div class="mb-2">
+                      <label for="" class="form-label"><strong>Password <span style="color:red">*</span></strong></label>
+                      <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    </div>
+                    <button class="btnSubmit" type="submit">Log in</button>
+                    <div class="text-center"><span class="or">or</span></div>
+                    <button type="button" class="btnSocial"><img width="25px" src="./public/image/facebook.png" alt=""> Sign in with Facebook</button>
+                    <button type="button" class="btnSocial"><img width="25px" src="./public/image/google.png" alt=""> Sign in with Google </button>
+                    <button type="button" class="btnSocial"><img width="25px" src="./public/image/apple.png" alt=""> Sign in with Apple</button>
+                  </div>
+                  <div class="signupTab">
+                    <h3>SIGN UP</h3>
+                    <div class="mb-2">
+                      <label for="" class="form-label"><strong>Full name <span style="color:red">*</span></strong></label>
+                      <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    </div>
+                    <div class="mb-2">
+                      <label for="" class="form-label"><strong>Email <span style="color:red">*</span></strong></label>
+                      <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    </div>
+                    <div class="mb-2">
+                      <label for="" class="form-label"><strong>Phone<span style="color:red">*</span></strong></label>
+                        <div class="phoneBox">
+                          <div class="phoneBoxLeft">
+                            <select class="form-select form-select-lg" name="" id="">
+                              <option value="">+84</option>
+                              <option value="">Istanbul</option>
+                              <option value="">Jakarta</option>
+                            </select>
+                          </div>
+                          <div class="phoneBoxRight">
+                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                      <label for="" class="form-label"><strong>Password <span style="color:red">*</span></strong></label>
+                      <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    </div>
+                    <div class="mb-2">
+                      <label for="" class="form-label"><strong>Captcha <span style="color:red">*</span></strong></label>
+                        <div class="phoneBox">
+                          <div class="phoneBoxLeft">
+                            <div class="capchar">1g43g24</div>
+                          </div>
+                          <div class="phoneBoxRight">
+                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                          </div>
+                        </div>
+                    </div>
+                    <button class="btnSubmit" type="submit">Create account</button>
+                  </div>
+
+
+                  <!-- <div class="boxPassword">
+                    <h3>DONE !</h3>
+                    <p>Enter the email you registered with and we'll send a link to reset the password</p>
+                    <button class="btnSubmit" type="submit">Sign in</button>
+                  </div>
+                  <div class="boxPassword">
+                    <h3>NEW password</h3>
+                    <p>Enter the email you registered with and we'll send a link to reset the password</p>
+                    <div class="mb-3">
+                      <label for="" class="form-label"><strong>Password <span style="color:red">*</span></strong></label>
+                      <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                      <label for="" class="form-label"><strong>Confirm Password <span style="color:red">*</span></strong></label>
+                      <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    </div>
+                    <button class="btnSubmit" type="submit">Save password</button>
+                  </div>
+                  <div class="boxPassword">
+                    <h3>Forgot your password?</h3>
+                    <p>Enter the email you registered with and we'll send a link to reset the password</p>
+                    <div class="mb-3">
+                      <label for="" class="form-label"><strong>Email <span style="color:red">*</span></strong></label>
+                      <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    </div>
+                    <button class="btnSubmit" type="submit">Send a link</button>
+                  </div> -->
+
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -377,44 +517,46 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <div class="boxLogo">
-              <img src="./public/image/logo.svg" alt="">
-              <img src="./public/image/logo-name.svg" alt="">
-            </div>
+            <a href="./index.html">
+              <div class="boxLogo">
+                <img src="./public/image/logo.svg" alt="">
+                <img src="./public/image/logo-name.svg" alt="">
+              </div>
+            </a>
           </div>
           <div class="col-md-9">
             <div class="row">
               <div class="col-md-3">
                 <h5 class="title">Company</h5>
                 <ul class="list">
-                  <li class="item"><a href="">About Us</a></li>
-                  <li class="item"><a href="">Careers</a></li>
-                  <li class="item"><a href="">Terms &<br/> Conditions</a></li>
-                  <li class="item"><a href="">Cancelation &<br/> Refund Policy</a></li>
+                  <li class="item"><a href="./about-us.html">About Us</a></li>
+                  <li class="item"><a href="./career.html">Careers</a></li>
+                  <li class="item"><a href="./consular-egalization.html">Consular Rgalization</a></li>
+                  <li class="item"><a href="./cancellation-policy.html">Cancelation &<br/> Refund Policy</a></li>
                 </ul>
               </div>
               <div class="col-md-3">
                 <h5 class="title">Company</h5>
                 <ul class="list">
-                  <li class="item"><a href="">About Us</a></li>
-                  <li class="item"><a href="">Careers</a></li>
-                  <li class="item"><a href="">Terms &<br/> Conditions</a></li>
-                  <li class="item"><a href="">Cancelation &<br/> Refund Policy</a></li>
+                  <li class="item"><a href="./notarized-translation.html">Notarized Translation</a></li>
+                  <li class="item"><a href="./vietnam-passport.html">Vietnam Passport</a></li>
+                  <li class="item"><a href="./blog.html">Blog</a></li>
+                  <li class="item"><a href="./contact.html">Contact</a></li>
                 </ul>
               </div>
               <div class="col-md-3">
                 <h5 class="title">Company</h5>
                 <ul class="list">
-                  <li class="item"><a href="">About Us</a></li>
-                  <li class="item"><a href="">Careers</a></li>
-                  <li class="item"><a href="">Terms &<br/> Conditions</a></li>
-                  <li class="item"><a href="">Cancelation &<br/> Refund Policy</a></li>
+                  <li class="item"><a href="./apply-visa-step-1.html">Apply Visa Step 1</a></li>
+                  <li class="item"><a href="./apply-visa-step-2.html">Apply Visa Step 2</a></li>
+                  <li class="item"><a href="./apply-visa-step-3.html">Apply Visa Step 3</a></li>
+                  <li class="item"><a href="./apply-visa-step-4.html">Apply Visa Step 4</a></li>
                 </ul>
               </div>
               <div class="col-md-3">
                 <h5 class="title">Company</h5>
                 <ul class="list">
-                  <li class="item"><a href="">About Us</a></li>
+                  <li class="item"><a href="./terms-and-conditions.html">Terms & Conditions</a></li>
                   <li class="item"><a href="">Careers</a></li>
                   <li class="item"><a href="">Terms &<br/> Conditions</a></li>
                   <li class="item"><a href="">Cancelation &<br/> Refund Policy</a></li>
@@ -442,6 +584,44 @@
         </div>
       </div>
     </footer>
+    <div class="popup">
+        <div class="container container-popup">
+            <div class="box">
+                <i class="fa-solid fa-xmark closePopup"></i>
+                <h3 class="title">REQUEST REFUND</h3>
+                <table class="popupTable">
+                    <tr>
+                        <th><h6 class="type"><img src="./public/image/fly.svg" alt=""> <strong>Your services :</strong></h6></th>
+                    </tr>
+                    <tr>
+                        <td>1. Arrival Fast track:</td>
+                        <td>1 x USD 45 = USD 45</td>
+                    </tr>
+                    <tr>
+                        <td>2. Tourist eVisa:</td>
+                        <td>1 x USD 75 = USD 75</td>
+                    </tr>
+                    <tr>
+                        <td class="text-color-red">Total amount : </td>
+                        <td class="text-color-red"><strong>USD 120</strong></td>
+                    </tr>
+                </table>
+                <hr>
+                <h6 class="type"><img src="./public/image/fly.svg" alt=""> <strong>Request details :</strong></h6>
+                <p>The services that you would like to refund :</p>
+                <ul>
+                    <li>Arrival Fast track</li>
+                    <li>Tourist eVisa</li>
+                </ul>
+                <h6 class="type"><strong>Reasons why you should be refunded :</strong></h6>
+                <div class="mb-3">
+                  <label for="" class="form-label"></label>
+                  <textarea class="form-control" name="" id="" rows="3"></textarea>
+                </div>
+                <button class="btnSubmit">Submit</button>
+            </div>
+        </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script
@@ -449,6 +629,5 @@
 
     <script
       src="./public/js/bootstrap-5.0.2/js/bootstrap.min.js"></script>
-
   </body>
 </html>

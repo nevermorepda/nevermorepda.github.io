@@ -12,6 +12,9 @@ a {
 .text-right {
     text-align: right;
 }
+.text-color-red {
+    color: #dc3545;
+}
 .text-color {
     color: #C30E0E;
 }
@@ -26,6 +29,9 @@ p {
 }
 a:hover {
     color: #DC3545;
+}
+input[type='file'] {
+    display: none;
 }
 section {
     padding: 50px 0;
@@ -1187,6 +1193,30 @@ textarea:focus, input:focus{
     font-style: normal;
     font-weight: 400;
 }
+.visaStep-4 h1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    color: #9C0B0B;
+    margin: 50px 0 20px;
+}
+.goToHome {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    background: #C30E0E;
+    border: none;
+    color: #fff;
+    padding: 13px 50px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.goToHome:hover {
+    color: #fff;
+}
 #voa .imageBanner {
     margin-top: 150px;
     border: 10px solid #fff;
@@ -1710,6 +1740,18 @@ textarea:focus, input:focus{
     border-radius: 50%;
     top: -5px;
 }
+.consularServices li.list7:before {
+    position: absolute;
+    content: '7';
+    left: -50px;
+    width: 35px;
+    height: 35px;
+    background: #D9D9D9;
+    text-align: center;
+    padding: 6px;
+    border-radius: 50%;
+    top: -5px;
+}
 .listContent {
     
 }
@@ -1742,6 +1784,7 @@ textarea:focus, input:focus{
 .bgBoxConactInfo {
     width: 100%;
     object-fit: cover;
+    height: 300px;
 }
 .wapperBgBoxContactInfo {
     position: absolute;
@@ -1755,7 +1798,7 @@ textarea:focus, input:focus{
     border: 1px solid #D9D9D9;
     background: rgba(248, 249, 250, 0.50);
     backdrop-filter: blur(7.5px);
-    margin-top: 100px;
+    margin-top: 70px;
     padding: 35px;
 } 
 .boxInfoContact .item {
@@ -2133,18 +2176,16 @@ textarea:focus, input:focus{
     background: #fff;
 }
 #orderPage {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 .profileBox {
     border: 1px solid #dee2e6;
-    padding: 25px;
+    padding: 40px 20px;
     border-radius: 15px;
     text-align: center;
     margin-bottom: 30px;
 }
 .profileBox .imageBox {
-    width: 169px;
-    height: 169px;
     margin: auto;
     position: relative;
 }
@@ -2156,8 +2197,8 @@ textarea:focus, input:focus{
 }
 .profileBox .imageBox i{
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 50px;
     width: 30px;
     height: 30px;
     background: #fff;
@@ -2166,12 +2207,13 @@ textarea:focus, input:focus{
     border-radius: 50%;
     box-shadow: 0 0 10px #000;
     color: #c30e0e;
+    cursor: pointer;
 }
-.profileBox h5{
+.profileBox h5 {
     font-size: 23px;
     font-style: normal;
     font-weight: 400;
-    margin: 20px 0;
+    margin: 35px 0;
     display: block;
 }
 .profileBox .tabs {
@@ -2197,6 +2239,17 @@ textarea:focus, input:focus{
     border-radius: 15px;
     overflow: auto;
 }
+.orderBox  .fa-arrow-left {
+    font-size: 25px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background: #C30E0E;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+}
 .orderBox h1 {
     font-size: 30px;
     text-transform: uppercase;
@@ -2204,8 +2257,8 @@ textarea:focus, input:focus{
     margin-bottom: 20px;
     color: #c30e0e;
 }
-.orderBox th,
-.orderBox td {
+.orderBox .orderTable th,
+.orderBox .orderTable td {
     padding: 20px 7px;
 }
 .orderBox .fa-eye {
@@ -2232,7 +2285,51 @@ textarea:focus, input:focus{
     color: #CF3E3E;
     font-weight: 600;
 }
-
+.orderBox .detailTable th {
+    width: 160px;
+}
+.orderBox .detailTable th,
+.orderBox .detailTable td {
+    padding: 5px 0;
+}
+.orderBox button {
+    border: 0;
+    background: #C30E0E;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.orderBox .btnCancel {
+    background: #D9D9D9;
+    color: #000;
+}
+#profile {
+    padding: 50px 0;
+}
+#profile .orderBox h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: #C30E0E;
+    margin: 20px 0;
+    position: relative;
+}
+#profile .orderBox h2 .edit {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+#profile .orderBox select, #profile .orderBox input[type='text'], #profile .orderBox input[type='date'], #profile .orderBox input[type='password'] {
+    height: 45px;
+    font-size: 16px;
+}
+.orderBox .btnBoxEdit {
+    display: none;
+}
 /* ###################### footer ########################## */
 footer {
     padding: 50px 0;
@@ -2278,6 +2375,69 @@ footer .bottomFooter p {
 footer .bottomFooter p a {
     text-decoration: underline;
     color: #fff;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0000008f;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+.popup .container-popup {
+    max-width: 600px;
+}
+.popup .box {
+    position: relative;
+    padding: 30px 28px;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 100px;
+    box-shadow: 0 0 5px #464646;
+}
+.popup .box .fa-xmark {
+    position: absolute;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 7px;
+    text-align: center;
+    cursor: pointer;
+    top: 5px;
+    box-shadow: 0 0 5px #333;
+}
+.popup .title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    color: #9c0b0b;
+    margin-bottom: 25px;
+}
+.popup .popupTable {
+    width: 100%;
+}
+.popup .popupTable th,.popup .popupTable td {
+    padding: 7px 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+.popup .box .btnSubmit {
+    border: 0;
+    background: #C30E0E;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 @media only screen and (max-width: 567px) {
     .contenBorder {
