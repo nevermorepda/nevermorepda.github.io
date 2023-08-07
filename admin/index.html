@@ -1,11 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>admin</h1>
-</body>
+    <title>Global Offshore Company (G.O.C)</title>
+    <link
+      href="../public/css/bootstrap-5.0.2/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link href="./css/admin.css" rel="stylesheet">
+    <script src="../public/js/jquery.min.js"></script>
+    <script src="./js/admin.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <!-- End Header ---------------------------------------------------------------------------------------------------------------------->
+    <main>
+      <div class="navMenu transition">
+        <div class="logoBox">
+          <div class="boxLogo">
+            <a href="#">
+              <img src="../public/image/logo.svg" alt>
+              <img src="../public/image/logo-name.svg" alt>
+            </a>
+          </div>
+          <ul class="menu">
+            <li class="item active" status = '1'>
+              <a><i class="fa-solid fa-calendar-days"></i>Order management</a>
+              <i class="fa-solid fa-chevron-right"></i>
+              <ul class="subMenu">
+                <li class="subItem"><a href="">Orders</a></li>
+                <li class="subItem"><a href="">Coupons</a></li>
+              </ul>
+            </li>
+            <li class="item active" status = '1'>
+              <a><i class="fa-solid fa-user"></i>Customer management</a>
+              <i class="fa-solid fa-chevron-right"></i>
+              <ul class="subMenu">
+                <li class="subItem"><a href="">Customers</a></li>
+                <li class="subItem"><a href="">Request contact us</a></li>
+              </ul>
+            </li>
+            <li class="item active" status = '1'>
+              <a><i class="fa-solid fa-file"></i>Content management</a>
+              <i class="fa-solid fa-chevron-right"></i>
+              <ul class="subMenu">
+                <li class="subItem"><a href="">Services</a></li>
+                <li class="subItem"><a href="">Price</a></li>
+                <li class="subItem"><a href="">Forms</a></li>
+                <li class="subItem"><a href="">Posts</a></li>
+              </ul>
+            </li>
+            <li class="item active" status = '1'>
+              <a><i class="fa-solid fa-user-gear"></i>User management</a>
+              <i class="fa-solid fa-chevron-right"></i>
+              <ul class="subMenu">
+                <li class="subItem"><a href="">Users</a></li>
+                <li class="subItem"><a href="">User Roles</a></li>
+              </ul>
+            </li>
+            <li class="item" status = '0'>
+              <a><i class="fa-solid fa-chart-simple"></i>Report</a>
+              <i class="fa-solid fa-chevron-right"></i>
+              <ul class="subMenu">
+                <li class="subItem"><a href="">Report 1</a></li>
+                <li class="subItem"><a href="">Report 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pageHeader clearfix d-none d-lg-none d-xl-block d-xxl-block">
+          <div class="float-start">
+            <div class="headerLeft">
+              <i class="fa-solid fa-bars"></i>
+              <div class="boxSearch"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search"></div>
+            </div>
+          </div>
+          <div class="float-end">
+             <ul class="accountBox">
+              <li><a href="#" class="lang active">EN</a><a href="#" class="lang">VI</a></li>
+              <li><span class="notify">10</span><i class="fa-regular fa-bell"></i></li>
+              <li>
+                <a href="#">
+                  <div class="account">
+                    <div class="atvBox"><img src="../public/image/avatar.png" alt=""></div>
+                    <div class="info">
+                      <h5>Kevin Nguyen</h5>
+                      <p>adminstrator</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+             </ul>
+          </div>
+        </div>
+        <div class="pageHeader clearfix d-block d-xl-none d-xxl-none" style="box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.08);">
+          <div class="float-start">
+             <ul class="accountBox">
+              <li>
+                <a href="#">
+                  <div class="account">
+                    <div class="atvBox"><img src="../public/image/avatar.png" alt=""></div>
+                    <div class="info">
+                      <h5>Kevin Nguyen</h5>
+                      <p>adminstrator</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#" class="lang active">EN</a><a href="#" class="lang">VI</a></li>
+              <li><span class="notify">10</span><i class="fa-regular fa-bell"></i></li>
+             </ul>
+          </div>
+          <div class="float-end">
+            <div class="headerLeft">
+              <i class="fa-solid fa-bars fa-bars-m" style="margin: 0;" show = "0"></i>
+            </div>
+          </div>
+        </div>
+        <div class="pageContent">
+          <h1>Orders list</h1>
+          <div class="tblBox">
+            <div class="clearfix">
+              <h5 class="float-start">Orders list</h5>
+              <div class="float-end">
+                <select name="" id="input">
+                  <option value="">Filter by..</option>
+                </select>
+              </div>
+            </div>
+            <table class="table table-default table-bordered tbl">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-center"><input type="checkbox" name="" id=""></th>
+                  <th scope="col" class="text-center">No.</th>
+                  <th scope="col">Order ID</th>
+                  <th scope="col">Order date <i class="fa-solid fa-sort"></i></th>
+                  <th scope="col" class="text-center">Email</th>
+                  <th scope="col" class="text-center">Total</th>
+                  <th scope="col" class="text-center">Status <i class="fa-solid fa-sort"></i></th>
+                  <th scope="col" class="text-center">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="">
+                  <th scope="row" class="text-center"><input type="checkbox" name="" id=""></th>
+                  <td class="text-center">1</td>
+                  <td>ABC_123</td>
+                  <td>09:34 11/07/2023</td>
+                  <td class="text-center">abc123@gmail.com</td>
+                  <td class="text-center">$100</td>
+                  <td class="text-center warning">Pending payment</td>
+                  <td class="text-center">
+                    <i class="fa-regular fa-eye text-color-red"></i> 
+                    <i class="fa-regular fa-trash-can"></i> 
+                    <img src="../public/image/avatar.png" width="20px" alt="">
+                  </td>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="text-center"><input type="checkbox" name="" id=""></th>
+                  <td class="text-center">2</td>
+                  <td>ABC_123</td>
+                  <td>09:34 11/07/2023</td>
+                  <td class="text-center">abc123@gmail.com</td>
+                  <td class="text-center">$100</td>
+                  <td class="text-center">Pending</td>
+                  <td class="text-center">
+                    <i class="fa-regular fa-eye text-color-red"></i> 
+                    <i class="fa-regular fa-trash-can"></i> 
+                    <img src="../public/image/avatar.png" width="20px" alt="">
+                  </td>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="text-center"><input type="checkbox" name="" id=""></th>
+                  <td class="text-center">3</td>
+                  <td>ABC_123</td>
+                  <td>09:34 11/07/2023</td>
+                  <td class="text-center">abc123@gmail.com</td>
+                  <td class="text-center">$100</td>
+                  <td class="text-center info">In Progress</td>
+                  <td class="text-center">
+                    <i class="fa-regular fa-eye text-color-red"></i> 
+                    <i class="fa-regular fa-trash-can"></i> 
+                    <img src="../public/image/avatar.png" width="20px" alt="">
+                  </td>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="text-center"><input type="checkbox" name="" id=""></th>
+                  <td class="text-center">4</td>
+                  <td>ABC_123</td>
+                  <td>09:34 11/07/2023</td>
+                  <td class="text-center">abc123@gmail.com</td>
+                  <td class="text-center">$100</td>
+                  <td class="text-center success">Complete</td>
+                  <td class="text-center">
+                    <i class="fa-regular fa-eye text-color-red"></i> 
+                    <i class="fa-regular fa-trash-can"></i> 
+                    <img src="../public/image/avatar.png" width="20px" alt="">
+                  </td>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="text-center"><input type="checkbox" name="" id=""></th>
+                  <td class="text-center">5</td>
+                  <td>ABC_123</td>
+                  <td>09:34 11/07/2023</td>
+                  <td class="text-center">abc123@gmail.com</td>
+                  <td class="text-center">$100</td>
+                  <td class="text-center warning">Pending payment</td>
+                  <td class="text-center">
+                    <i class="fa-regular fa-eye text-color-red"></i> 
+                    <i class="fa-regular fa-trash-can"></i> 
+                    <img src="../public/image/avatar.png" width="20px" alt="">
+                  </td>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="text-center"><input type="checkbox" name="" id=""></th>
+                  <td class="text-center">6</td>
+                  <td>ABC_123</td>
+                  <td>09:34 11/07/2023</td>
+                  <td class="text-center">abc123@gmail.com</td>
+                  <td class="text-center">$100</td>
+                  <td class="text-center">Pending</td>
+                  <td class="text-center">
+                    <i class="fa-regular fa-eye text-color-red"></i> 
+                    <i class="fa-regular fa-trash-can"></i> 
+                    <img src="../public/image/avatar.png" width="20px" alt="">
+                  </td>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="text-center"><input type="checkbox" name="" id=""></th>
+                  <td class="text-center">7</td>
+                  <td>ABC_123</td>
+                  <td>09:34 11/07/2023</td>
+                  <td class="text-center">abc123@gmail.com</td>
+                  <td class="text-center">$100</td>
+                  <td class="text-center">Pending</td>
+                  <td class="text-center">
+                    <i class="fa-regular fa-eye text-color-red"></i> 
+                    <i class="fa-regular fa-trash-can"></i> 
+                    <img src="../public/image/avatar.png" width="20px" alt="">
+                  </td>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="text-center"><input type="checkbox" name="" id=""></th>
+                  <td class="text-center">8</td>
+                  <td>ABC_123</td>
+                  <td>09:34 11/07/2023</td>
+                  <td class="text-center">abc123@gmail.com</td>
+                  <td class="text-center">$100</td>
+                  <td class="text-center">Pending</td>
+                  <td class="text-center">
+                    <i class="fa-regular fa-eye text-color-red"></i> 
+                    <i class="fa-regular fa-trash-can"></i> 
+                    <img src="../public/image/avatar.png" width="20px" alt="">
+                  </td>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="text-center"><input type="checkbox" name="" id=""></th>
+                  <td class="text-center">9</td>
+                  <td>ABC_123</td>
+                  <td>09:34 11/07/2023</td>
+                  <td class="text-center">abc123@gmail.com</td>
+                  <td class="text-center">$100</td>
+                  <td class="text-center">Pending</td>
+                  <td class="text-center">
+                    <i class="fa-regular fa-eye text-color-red"></i> 
+                    <i class="fa-regular fa-trash-can"></i> 
+                    <img src="../public/image/avatar.png" width="20px" alt="">
+                  </td>
+                </tr>
+                <tr class="">
+                  <th scope="row" class="text-center"><input type="checkbox" name="" id=""></th>
+                  <td class="text-center">10</td>
+                  <td>ABC_123</td>
+                  <td>09:34 11/07/2023</td>
+                  <td class="text-center">abc123@gmail.com</td>
+                  <td class="text-center">$100</td>
+                  <td class="text-center">Pending</td>
+                  <td class="text-center">
+                    <i class="fa-regular fa-eye text-color-red"></i> 
+                    <i class="fa-regular fa-trash-can"></i> 
+                    <img src="../public/image/avatar.png" width="20px" alt="">
+                  </td>
+                </tr>
+              </tbody>
+          </table>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="pagination">
+                <span>Page:</span>
+                <ul class="pagiList">
+                    <li class="item"><a href="">First</a></li>
+                    <li class="item"><a href=""><</a></li>
+                    <li class="item"><a href="" class="active">4</a></li>
+                    <li class="item"><a href="">5</a></li>
+                    <li class="item"><a href="">6</a></li>
+                    <li class="item"><a href="">></a></li>
+                    <li class="item"><a href="">Last</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 text-right">
+              <a href="#" class="btnBgWhite showPopup">Assign to</a>
+              <a href="#" class="btnBgWhite">Random assign</a>
+              <a href="#" class="btnBgRed">Add new</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="popup">
+        <div class="container container-popup">
+            <div class="box">
+                <i class="fa-solid fa-xmark closePopup"></i>
+                <h3 class="title">ASSIGN TO</h3>
+                <p>Please choose an user that will be in charge of the order(s)</p>
+                <div class="mb-3">
+                  <select class="form-select form-select-lg" name="" id="">
+                    <option selected>Select one</option>
+                    <option value="">New Delhi</option>
+                    <option value="">Istanbul</option>
+                    <option value="">Jakarta</option>
+                  </select>
+                </div>
+                <a href="#" class="btnDefault">Cancel</a>
+                <a href="#" class="btnBgRed">Save</a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="popup">
+      <div class="container container-popup">
+          <div class="box">
+              <i class="fa-solid fa-xmark closePopup"></i>
+              <h3 class="title">ASSIGN TO</h3>
+              <table class="popupTable">
+                  <tr>
+                      <th><h6 class="type"><img src="./public/image/fly.svg" alt=""> <strong>Your services :</strong></h6></th>
+                  </tr>
+                  <tr>
+                      <td>1. Arrival Fast track:</td>
+                      <td>1 x USD 45 = USD 45</td>
+                  </tr>
+                  <tr>
+                      <td>2. Tourist eVisa:</td>
+                      <td>1 x USD 75 = USD 75</td>
+                  </tr>
+                  <tr>
+                      <td class="text-color-red">Total amount : </td>
+                      <td class="text-color-red"><strong>USD 120</strong></td>
+                  </tr>
+              </table>
+              <hr>
+              <h6 class="type"><img src="./public/image/fly.svg" alt=""> <strong>Request details :</strong></h6>
+              <p>The services that you would like to refund :</p>
+              <ul>
+                  <li>Arrival Fast track</li>
+                  <li>Tourist eVisa</li>
+              </ul>
+              <h6 class="type"><strong>Reasons why you should be refunded :</strong></h6>
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <textarea class="form-control" name="" id="" rows="3"></textarea>
+              </div>
+              <button class="btnSubmit">Submit</button>
+          </div>
+      </div>
+  </div> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="../public/js/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="../public/js/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
