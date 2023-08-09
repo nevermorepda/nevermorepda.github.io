@@ -26,8 +26,11 @@ $( document ).ready(function() {
         }
     })
 
-    $('.showPopup').click(function() {
-        $('.popup').show()
+    $('.showAssign').click(function() {
+        $('.popupAssign').show()
+    })
+    $('.showRefund').click(function() {
+        $('.popupRefund').show()
     })
     
     $('.closePopup').click(function() {
@@ -44,6 +47,10 @@ $( document ).ready(function() {
         $(this).parents('.updating').find('input').attr('disabled','true')
         $(this).parents('.updating').find('select').attr('disabled','true')
         $(this).parents('.btnBoxEdit').hide()
+    })
+
+    $('.changeStatus .item').click(function() {
+        $(this).parents('.boxChangeStatus').find('.orderStatus').html($(this).html())
     })
 });
 

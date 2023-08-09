@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Offshore Company (G.O.C)</title>
+    <link
+      href="../public/css/bootstrap-5.0.2/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link href="./css/admin.css" rel="stylesheet">
+    <script src="../public/js/jquery.min.js"></script>
+    <script src="./js/admin.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <!-- End Header ---------------------------------------------------------------------------------------------------------------------->
+    <main>
+      <div class="navMenu transition">
+        <div class="logoBox">
+          <div class="boxLogo">
+            <a href="#">
+              <img src="../public/image/logo.svg" alt>
+              <img src="../public/image/logo-name.svg" alt>
+            </a>
+          </div>
+          <ul class="menu">
+            <li class="item active" status = '1'>
+              <a><i class="fa-solid fa-calendar-days"></i>Order management</a>
+              <i class="fa-solid fa-chevron-right"></i>
+              <ul class="subMenu">
+                <li class="subItem"><a href="">Orders</a></li>
+                <li class="subItem"><a href="">Coupons</a></li>
+              </ul>
+            </li>
+            <li class="item active" status = '1'>
+              <a><i class="fa-solid fa-user"></i>Customer management</a>
+              <i class="fa-solid fa-chevron-right"></i>
+              <ul class="subMenu">
+                <li class="subItem"><a href="">Customers</a></li>
+                <li class="subItem"><a href="">Request contact us</a></li>
+              </ul>
+            </li>
+            <li class="item active" status = '1'>
+              <a><i class="fa-solid fa-file"></i>Content management</a>
+              <i class="fa-solid fa-chevron-right"></i>
+              <ul class="subMenu">
+                <li class="subItem"><a href="">Services</a></li>
+                <li class="subItem"><a href="">Price</a></li>
+                <li class="subItem"><a href="">Forms</a></li>
+                <li class="subItem"><a href="">Posts</a></li>
+              </ul>
+            </li>
+            <li class="item active" status = '1'>
+              <a><i class="fa-solid fa-user-gear"></i>User management</a>
+              <i class="fa-solid fa-chevron-right"></i>
+              <ul class="subMenu">
+                <li class="subItem"><a href="">Users</a></li>
+                <li class="subItem"><a href="">User Roles</a></li>
+              </ul>
+            </li>
+            <li class="item" status = '0'>
+              <a><i class="fa-solid fa-chart-simple"></i>Report</a>
+              <i class="fa-solid fa-chevron-right"></i>
+              <ul class="subMenu">
+                <li class="subItem"><a href="">Report 1</a></li>
+                <li class="subItem"><a href="">Report 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page">
+        <div class="pageHeader clearfix d-none d-lg-none d-xl-block d-xxl-block">
+          <div class="float-start">
+            <div class="headerLeft">
+              <i class="fa-solid fa-bars"></i>
+              <div class="boxSearch"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search"></div>
+            </div>
+          </div>
+          <div class="float-end">
+             <ul class="accountBox">
+              <li><a href="#" class="lang active">EN</a><a href="#" class="lang">VI</a></li>
+              <li><span class="notify">10</span><i class="fa-regular fa-bell"></i></li>
+              <li>
+                <a href="#">
+                  <div class="account">
+                    <div class="atvBox"><img src="../public/image/avatar.png" alt=""></div>
+                    <div class="info">
+                      <h5>Kevin Nguyen</h5>
+                      <p>adminstrator</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+             </ul>
+          </div>
+        </div>
+        <div class="pageHeader clearfix d-block d-xl-none d-xxl-none" style="box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.08);">
+          <div class="float-start">
+             <ul class="accountBox">
+              <li>
+                <a href="#">
+                  <div class="account">
+                    <div class="atvBox"><img src="../public/image/avatar.png" alt=""></div>
+                    <div class="info">
+                      <h5>Kevin Nguyen</h5>
+                      <p>adminstrator</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#" class="lang active">EN</a><a href="#" class="lang">VI</a></li>
+              <li><span class="notify">10</span><i class="fa-regular fa-bell"></i></li>
+             </ul>
+          </div>
+          <div class="float-end">
+            <div class="headerLeft">
+              <i class="fa-solid fa-bars fa-bars-m" style="margin: 0;" show = "0"></i>
+            </div>
+          </div>
+        </div>
+        <div class="pageContent">
+          <h1>Orders details</h1>
+          <div class="tblBox">
+            <div class="boxOrderInfo">
+                <div class="clearfix">
+                    <h5 class="float-start">Orders details</h5>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="orderDetail">
+                            <img src="../public/image/1.png" alt="">
+                            <p style="color:gray">Order date :</p>
+                            <p style="font-weight: 500;">09:34 - 11/07/2023</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="orderDetail">
+                            <img src="../public/image/2.png" alt="">
+                            <p style="color:gray">Order date :</p>
+                            <p style="font-weight: 500;">09:34 - 11/07/2023</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="orderDetail">
+                            <img src="../public/image/3.png" alt="">
+                            <p style="color:gray">Order date :</p>
+                            <p style="font-weight: 500;">09:34 - 11/07/2023</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="orderDetail">
+                            <img src="../public/image/4.png" alt="">
+                            <p style="color:gray">Order date :</p>
+                            <p style="font-weight: 500;">09:34 - 11/07/2023</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="orderDetail">
+                            <img src="../public/image/5.png" alt="">
+                            <p style="color:gray">Order date :</p>
+                            <p style="font-weight: 500;">09:34 - 11/07/2023</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="orderDetail">
+                            <img src="../public/image/6.png" alt="">
+                            <p style="color:gray">Order date :</p>
+                            <p style="font-weight: 500;">09:34 - 11/07/2023</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="orderDetail">
+                            <img src="../public/image/7.png" alt="">
+                            <p style="color:gray">Order date :</p>
+                            <p style="font-weight: 500;">09:34 - 11/07/2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="listOfService">
+                <div class="clearfix">
+                    <h5 class="float-start">List of services</h5>
+                </div>
+                <table class="table table-default table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="text-center">No.</th>
+                        <th scope="col">Service name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col" class="text-center">Quantity</th>
+                        <th scope="col" class="text-center">Price</th>
+                        <th scope="col" class="text-center">Total</th>
+                        <th scope="col" width="200px" class="text-center">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="">
+                        <td class="text-center">1</td>
+                        <td>Tourist eVisa</td>
+                        <td>
+                            <ul class="description">
+                                <li class="item">Entry date : <span>14/11/2023</span></li>
+                                <li class="item">Entry date : <span>14/11/2023</span></li>
+                                <li class="item">Arrival port : <span>Tan Son Nhat International Airport (Ho Chi Minh City)</span></li>
+                                <li class="item">Exit through checkpoint : <span>Tan Son Nhat International Airport (Ho Chi Minh City)</span></li>
+                                <li class="item">Number of Applicants: <span>2</span></li>
+                            </ul>
+                        </td>
+                        <td class="text-center">2</td>
+                        <td class="text-center">$100</td>
+                        <td class="text-center">$100</td>
+                        <td class="text-center">
+                          <div class="boxChangeStatus">
+                            <div class="orderStatus"><span class="warning">Pending payment</span></div>
+                            <ul class="changeStatus">
+                              <li class="item"><span class="">Pending</span></li>
+                              <li class="item"><span class="info">In Progress</span></li>
+                              <li class="item"><span class="warning">Pending payment</span></li>
+                              <li class="item"><span class="success">Completed</span></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="">
+                        <td class="text-center">2</td>
+                        <td>Tourist eVisa</td>
+                        <td>
+                            <ul class="description">
+                                <li class="item">Entry date : <span>14/11/2023</span></li>
+                                <li class="item">Entry date : <span>14/11/2023</span></li>
+                                <li class="item">Arrival port : <span>Tan Son Nhat International Airport (Ho Chi Minh City)</span></li>
+                                <li class="item">Exit through checkpoint : <span>Tan Son Nhat International Airport (Ho Chi Minh City)</span></li>
+                                <li class="item">Number of Applicants: <span>2</span></li>
+                            </ul>
+                        </td>
+                        <td class="text-center">2</td>
+                        <td class="text-center">$100</td>
+                        <td class="text-center">$100</td>
+                        <td class="text-center">
+                          <div class="boxChangeStatus">
+                            <div class="orderStatus"><span class="warning">Pending payment</span></div>
+                            <ul class="changeStatus">
+                              <li class="item"><span class="">Pending</span></li>
+                              <li class="item"><span class="info">In Progress</span></li>
+                              <li class="item"><span class="warning">Pending payment</span></li>
+                              <li class="item"><span class="success">Completed</span></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="">
+                        <td class="text-center">3</td>
+                        <td>Tourist eVisa</td>
+                        <td>
+                            <ul class="description">
+                                <li class="item">Entry date : <span>14/11/2023</span></li>
+                                <li class="item">Entry date : <span>14/11/2023</span></li>
+                                <li class="item">Arrival port : <span>Tan Son Nhat International Airport (Ho Chi Minh City)</span></li>
+                                <li class="item">Exit through checkpoint : <span>Tan Son Nhat International Airport (Ho Chi Minh City)</span></li>
+                                <li class="item">Number of Applicants: <span>2</span></li>
+                            </ul>
+                        </td>
+                        <td class="text-center">2</td>
+                        <td class="text-center">$100</td>
+                        <td class="text-center">$100</td>
+                        <td class="text-center">
+                          <div class="boxChangeStatus">
+                            <div class="orderStatus"><span class="warning">Pending payment</span></div>
+                            <ul class="changeStatus">
+                              <li class="item"><span class="">Pending</span></li>
+                              <li class="item"><span class="info">In Progress</span></li>
+                              <li class="item"><span class="warning">Pending payment</span></li>
+                              <li class="item"><span class="success">Completed</span></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="listOfService">
+              <div class="clearfix">
+                  <h5 class="float-start">Service details</h5>
+              </div>
+              <table class="table table-default table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="text-center">No.</th>
+                      <th scope="col">Applicant</th>
+                      <th scope="col">Description</th>
+                      <th scope="col" width="300px" class="text-center">Attachments</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="">
+                      <td class="text-center">1</td>
+                      <td>Tourist eVisa</td>
+                      <td>
+                          <ul class="description">
+                              <li class="item">Entry date : <span>14/11/2023</span></li>
+                              <li class="item">Entry date : <span>14/11/2023</span></li>
+                              <li class="item">Arrival port : <span>Tan Son Nhat International Airport (Ho Chi Minh City)</span></li>
+                              <li class="item">Exit through checkpoint : <span>Tan Son Nhat International Airport (Ho Chi Minh City)</span></li>
+                              <li class="item">Number of Applicants: <span>2</span></li>
+                          </ul>
+                      </td>
+                      <td class="text-center">
+                        <div class="attachFile">
+                          <div class="boxLeft">
+                            <img src="../public/image/defaultImg.png" width="100px" alt="">
+                          </div>
+                          <div class="boxRight">
+                            <img src="../public/image/defaultImg.png" width="100px" alt="">
+                          </div>
+                        </div>
+                    </tr>
+                    <tr class="">
+                      <td class="text-center">2</td>
+                      <td>Tourist eVisa</td>
+                      <td>
+                          <ul class="description">
+                              <li class="item">Entry date : <span>14/11/2023</span></li>
+                              <li class="item">Entry date : <span>14/11/2023</span></li>
+                              <li class="item">Arrival port : <span>Tan Son Nhat International Airport (Ho Chi Minh City)</span></li>
+                              <li class="item">Exit through checkpoint : <span>Tan Son Nhat International Airport (Ho Chi Minh City)</span></li>
+                              <li class="item">Number of Applicants: <span>2</span></li>
+                          </ul>
+                      </td>
+                      <td class="text-center">
+                        <div class="attachFile">
+                          <div class="boxLeft">
+                            <img src="../public/image/defaultImg.png" width="100px" alt="">
+                          </div>
+                          <div class="boxRight">
+                            <img src="../public/image/defaultImg.png" width="100px" alt="">
+                          </div>
+                        </div>
+                    </tr>
+                  </tbody>
+              </table>
+          </div>
+          <div class="listOfService">
+            <div class="clearfix">
+                <h5 class="float-start">Refund details</h5>
+            </div>
+            <table class="table table-default table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col" class="text-center">No.</th>
+                    <th scope="col" width="200px">Service name</th>
+                    <th scope="col">Money</th>
+                    <th scope="col">Reasons (Customer)</th>
+                    <th scope="col">Feedback (Staff)</th>
+                    <th scope="col" class="text-center">Feedback (Manager)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="">
+                    <td class="text-center">1</td>
+                    <td>Arrival Fast track</td>
+                    <td>$20</td>
+                    <td>Lorem ipsum dolor sit amet consectetur. Adipiscing donec lectus</td>
+                    <td>
+                      Lorem ipsum dolor sit amet consectetur. Adipiscing donec lectus
+                    </td>
+                    <td>
+                      Lorem ipsum dolor sit amet consectetur. Adipiscing donec lectus
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <td class="text-center">1</td>
+                    <td>Arrival Fast track</td>
+                    <td>$20</td>
+                    <td>Lorem ipsum dolor sit amet consectetur. Adipiscing donec lectus</td>
+                    <td>
+                      Lorem ipsum dolor sit amet consectetur. Adipiscing donec lectus
+                    </td>
+                    <td>
+                      Lorem ipsum dolor sit amet consectetur. Adipiscing donec lectus
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+          <div class="listOfService">
+            <div class="clearfix">
+                <h5 class="float-start">History / Log & Comment</h5>
+            </div>
+            <div class="boxTabList">
+              <div class="container">
+                <div class="tabList">
+                  <div class="item">
+                    <a class="active" href="">HISTORY</a>
+                  </div>
+                  <div class="item">
+                    <a href="">LOG & COMMENT</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table class="table table-default table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col" class="text-center">No.</th>
+                    <th scope="col" width="200px">Created date</th>
+                    <th scope="col">Activity</th>
+                    <th scope="col">Created by</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="">
+                    <td class="text-center">1</td>
+                    <td>09:25 - 11/07/2023</td>
+                    <td>
+                      Lorem ipsum dolor sit amet consectetur. Adipiscing donec lectus
+                    </td>
+                    <td>
+                      Name01
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <td class="text-center">1</td>
+                    <td>09:25 - 11/07/2023</td>
+                    <td>
+                      Lorem ipsum dolor sit amet consectetur. Adipiscing donec lectus
+                    </td>
+                    <td>
+                      Name01
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="pagination">
+                <span>Page:</span>
+                <ul class="pagiList">
+                    <li class="item"><a href="">First</a></li>
+                    <li class="item"><a href=""><</a></li>
+                    <li class="item"><a href="" class="active">4</a></li>
+                    <li class="item"><a href="">5</a></li>
+                    <li class="item"><a href="">6</a></li>
+                    <li class="item"><a href="">></a></li>
+                    <li class="item"><a href="">Last</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 text-right">
+              <a href="#" class="btnBgWhite showAssign">Assign to</a>
+              <a href="#" class="btnBgWhite showRefund">Refund</a>
+              <a href="#" class="btnBgWhite">Random assign</a>
+              <a href="#" class="btnBgRed">Add new</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="popup popupAssign">
+        <div class="container container-popup">
+            <div class="box">
+                <i class="fa-solid fa-xmark closePopup"></i>
+                <h3 class="title">ASSIGN TO</h3>
+                <p>Please choose an user that will be in charge of the order(s)</p>
+                <div class="mb-3">
+                  <select class="form-select form-select-lg" name="" id="">
+                    <option selected>Select one</option>
+                    <option value="">New Delhi</option>
+                    <option value="">Istanbul</option>
+                    <option value="">Jakarta</option>
+                  </select>
+                </div>
+                <a href="#" class="btnDefault">Cancel</a>
+                <a href="#" class="btnBgRed">Save</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup popupRefund">
+      <div class="container container-popup">
+          <div class="box">
+              <i class="fa-solid fa-xmark closePopup"></i>
+              <h3 class="title">REQUEST REFUND</h3>
+              <p>Lorem ipsum dolor sit amet consectetur. Ut ipsum</p>
+              <div class="boxService checked">
+                <div class="form-check checkBoxService">
+                  <input class="form-check-input" type="checkbox" checked value="" id="">
+                  <label class="form-check-label" for="">
+                    <strong>Tourist eVisa</strong>
+                  </label>
+                </div>
+                <input type="text"
+                  class="form-control price" name="" id="" aria-describedby="helpId" placeholder="">
+              </div>
+              <div class="boxService">
+                <div class="form-check checkBoxService">
+                  <input class="form-check-input" type="checkbox" value="" id="">
+                  <label class="form-check-label" for="">
+                    <strong>Tourist eVisa</strong>
+                  </label>
+                </div>
+                <input type="text"
+                  class="form-control price" name="" id="" aria-describedby="helpId" placeholder="">
+              </div>
+              <!-- <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">
+                  Arrival Fast track
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="">
+                <label class="form-check-label" for="">
+                  Car Pick up
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="" checked>
+                <label class="form-check-label" for="">
+                  eSim
+                </label>
+                
+              </div> -->
+              <a href="#" class="btnDefault">Cancel</a>
+              <a href="#" class="btnBgRed"> Send </a>
+          </div>
+      </div>
+    </div> 
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="../public/js/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="../public/js/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

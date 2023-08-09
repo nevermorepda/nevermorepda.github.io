@@ -9,6 +9,10 @@ a {
     color: #000;
     transition: all 0.3s;
 }
+.form-check-input:checked {
+    background-color: #C30E0E;
+    border-color: #C30E0E;
+}
 .text-right {
     text-align: right;
 }
@@ -286,6 +290,7 @@ main .page .pageHeader {
     background: #fff;
     padding: 10px 20px;
     border-left: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
 }
 main .page .pageHeader .headerLeft {
     display: flex;
@@ -372,6 +377,8 @@ main .page .pageHeader .accountBox li .account .info p {
 }
 .pageContent {
     padding: 20px 30px;
+    height: calc(100vh - 62px);
+    overflow: auto;
 }
 .pageContent h1 {
     font-size: 24px;
@@ -428,6 +435,130 @@ main .page .pageHeader .accountBox li .account .info p {
 .pagination .pagiList li a.active{
     color: #CF3E3E;
     font-weight: 600;
+}
+.boxOrderInfo {
+    background-image: url(../../public/image/bg-info-detail.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    backdrop-filter: blur(7.5px);
+    padding: 30px;
+}
+.orderDetail {
+    width: 100%;
+    margin-bottom: 25px;
+}
+.orderDetail p {
+    margin: 0;
+    font-size: 14px;
+}
+.orderDetail img {
+    width: 25px;
+    height: 30px;
+    object-fit: contain;
+}
+.listOfService {
+    border: 1px solid #eee;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 7px;
+}
+.listOfService .description .item {
+    font-size: 15px;
+}
+.listOfService .description .item span {
+    font-weight: 500;
+}
+.boxChangeStatus {
+    position: relative;
+}
+.boxChangeStatus .orderStatus {
+    cursor: pointer;
+}
+.boxChangeStatus:hover .changeStatus {
+    display: block !important;
+}
+.boxChangeStatus .changeStatus {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    display: none;
+    box-shadow: 0 0 10px #d2d2d2;
+    border-radius: 6px;
+    padding: 5px;
+    background: #fff;
+    z-index: 1;
+    width: 100%;
+}
+.boxChangeStatus .changeStatus .item {
+   list-style: none;
+   cursor: pointer;
+   padding: 5px;
+}
+.boxChangeStatus .changeStatus .item:hover {
+    background: #fbfbfb;
+}
+.attachFile {
+    display: table;
+    width: 100%;
+    margin-top: 7px;
+}
+.attachFile .boxLeft {
+    display: table-cell;
+}
+.attachFile .boxRight {
+    display: table-cell;
+}
+.boxTabList {
+    border-bottom: 1px solid #333;
+    margin: 20px 0 30px;
+}
+.tabList {
+    display: table;
+    margin: auto;
+}
+.tabList .item {
+    display: table-cell;
+    min-width: 200px;
+    text-align: center;
+}
+.tabList .item a {
+    display: block;
+    padding: 10px 5px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+.tabList .item a.active {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-top: 6px solid #CF3E3E;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    position: relative;
+}
+.tabList .item a.active:before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    background: #ffffff;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+}
+.boxService {
+    margin-bottom: 20px;
+}
+.boxService .checkBoxService{
+    margin-bottom: 10px;
+}
+.boxService.checked .price {
+    display: block;
+}
+.boxService .price {
+    display: none;
 }
 @media only screen and (max-width: 567px) {
     
